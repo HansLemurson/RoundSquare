@@ -1,0 +1,312 @@
+[tilespec]
+
+; Format and options of this tilespec file:
+options = "+Freeciv-2.6-tilespec"
+
+; A simple name for the tileset specified by this file:
+name = "RoundSquare"
+priority = 5
+
+
+version = "2.6"
+
+summary = "30x30 Rounded Squares"
+
+description = "Visual improvement over Trident, with emphasis on smooth contours and clarity of information."
+
+; TODO: add more overall information fields on tiles, 
+; eg, description, authors, colors, etc.
+
+; Basic tile sizes:
+normal_tile_width  = 30
+normal_tile_height = 30
+small_tile_width   = 15
+small_tile_height  = 20
+
+; Basic tile style.
+type = "overhead"
+is_hex = FALSE
+
+; Was old iso style
+fog_style      = "Darkness"
+
+; Was darkness style "CardinalFull" (15 sprites)
+darkness_style = "Corner"
+; Which terrain layer darkness is drawn top of (0-2)
+darkness_layer = 0
+ 
+; offset the flags by this amount when drawing units
+unit_flag_offset_x = 0
+unit_flag_offset_y = 0
+city_flag_offset_x = 0
+city_flag_offset_y = 0
+ 
+; offset the city occupied sprite by this amount
+occupied_offset_x = 0
+occupied_offset_y = 0
+
+; offset the units by this amount when drawing units
+unit_offset_x = 0
+unit_offset_y = 0
+
+; offset of the normal activity icons
+activity_offset_x = 0
+activity_offset_y = 0
+
+; offset the cities by this amount
+city_offset_x = 0
+city_offset_y = 0
+
+; offset the city bar text by this amount (from the city tile origin)
+citybar_offset_y = 30
+
+; offset the tile label text by this amount
+tilelabel_offset_y = 10
+
+; offset the upkeep icons by this amount from the top of the unit itself.
+; The default is the normal tile height, which means that the upkeep icons
+; appear below the unit icon if the unit icons are equal to tile height
+; (typical in overhead tileset), or overlay lower part of the unit icon,
+; if unit icon is higher than tiles (typical in iso tilesets)
+;unit_upkeep_offset_y = 0
+
+; Like unit_upkeep_offset_y, but to be used in case there`s only small
+; space for the overall icon produced. Defaults to unit_upkeep_offset_y -
+; not having alternative layout.
+; Set it to overlay lower part of the unit icon instead of taking extra
+; space below.
+unit_upkeep_small_offset_y = 20
+
+; Font size (points) to use to draw city names and productions:
+city_names_font_size = 7
+city_productions_font_size = 7
+
+; These are special because they get freed and reloaded
+; as required:
+main_intro_file    = "misc/intro"
+minimap_intro_file = "misc/radar"
+
+; Below, the graphics spec files; must be somewhere (anywhere) in 
+; the data path. Order may be important for color allocation on 
+; low-color systems, and if there are any duplicate tags (lattermost
+; tag is used).
+files =
+  "misc/overlays.spec",
+  "RoundSquare/citybar.spec", 
+  "RoundSquare/yields.spec",
+  ;  "RoundSquare/yields_f.spec",	;Optional Full-Food yield graphics.  Uncomment to activate. 
+  "RoundSquare/tiles.spec",
+  ;earth?
+  "misc/small.spec",
+  "misc/events.spec",
+  "misc/governments.spec",
+  "RoundSquare/specialists.spec",
+  "RoundSquare/units.spec",
+  "RoundSquare/units_LT.spec",
+  "RoundSquare/select.spec",
+  "misc/flags.spec",
+  "misc/shields.spec",
+  "misc/cursors.spec",
+  "RoundSquare/grid.spec",
+  "RoundSquare/roads.spec",
+  "misc/buildings.spec",
+  "misc/space.spec",
+  "misc/techs.spec",
+  "misc/treaty.spec",
+  "misc/icons.spec",
+  "misc/editor.spec",
+  "RoundSquare/fog.spec",
+  "RoundSquare/cities.spec",
+  "RoundSquare/explosions.spec"
+
+
+; Include color definitions
+*include "misc/colors.tilespec"
+
+; Terrain info - see README.graphics
+
+[layer0]
+match_types = "desert", "forest", "grassland", "hills", "jungle", "mountains", "water", "plains", "swamp", "tundra"
+
+[layer1]
+match_types = "water", "land"
+
+[layer2]
+match_types = "water", "arctic"
+
+; Water graphics referenced by terrain.ruleset
+;
+[tile_coast]
+tag = "coast"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "water"
+layer0_match_with = "water"
+layer0_sprite_type = "corner"
+layer1_match_type = "water"
+layer1_match_with = "water"
+layer2_match_type = "water"
+layer2_match_with = "water"
+mine_sprite = "tx.oil_mine"
+
+[tile_floor]
+tag = "floor"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "water"
+layer0_match_with = "water"
+layer0_sprite_type = "corner"
+layer1_match_type = "water"
+layer1_match_with = "water"
+layer2_match_type = "water"
+layer2_match_with = "water"
+mine_sprite = "tx.oil_mine"
+
+[tile_lake]
+tag = "lake"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "water"
+layer0_match_with = "water"
+layer0_sprite_type = "corner"
+layer1_match_type = "water"
+layer1_match_with = "water"
+layer2_match_type = "water"
+layer2_match_with = "water"
+mine_sprite = "tx.oil_mine"
+
+[tile_inaccessible]
+tag = "inaccessible"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "water"
+layer0_match_with = "water"
+layer0_sprite_type = "corner"
+layer1_match_type = "water"
+layer1_match_with = "water"
+layer2_match_type = "water"
+layer2_match_with = "water"
+mine_sprite = "tx.oil_mine"
+
+; Land graphics referenced by terrain.ruleset
+;
+[tile_arctic]
+tag = "arctic"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "tundra"
+layer0_match_with = "tundra"
+layer1_match_type = "water"
+layer1_match_with = "water"
+layer2_match_type = "arctic"
+mine_sprite = "tx.oil_mine"
+
+[tile_desert]
+tag = "desert"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "desert"
+layer0_match_with = "desert"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.oil_mine"
+
+[tile_forest]
+tag = "forest"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "forest"
+layer0_match_with = "forest"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.mine"
+
+[tile_grassland]
+tag = "grassland"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "grassland"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.mine"
+
+[tile_hills]
+tag = "hills"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "hills"
+layer0_match_with = "hills"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.mine"
+
+[tile_jungle]
+tag = "jungle"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "jungle"
+layer0_match_with = "jungle"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.mine"
+
+[tile_mountains]
+tag = "mountains"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "mountains"
+layer0_match_with = "mountains"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.mine"
+
+[tile_plains]
+tag = "plains"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "plains"
+layer0_match_with = "plains"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.mine"
+
+[tile_swamp]
+tag = "swamp"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "swamp"
+layer0_match_with = "swamp"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.mine"
+
+[tile_tundra]
+tag = "tundra"
+blend_layer = 0
+num_layers = 3
+layer0_match_type = "tundra"
+layer0_match_with = "tundra"
+layer1_match_type = "land"
+layer2_match_type = "water"
+mine_sprite = "tx.oil_mine"
+
+[extras]	;used to be just roads
+styles =
+    { "name",          "style"
+      "road.road",     "RoadParityCombined"
+      "road.rail",     "RoadParityCombined"
+      "road.maglev",   "RoadParityCombined"
+      "road.river",    "River"
+      "tx.irrigation", "Cardinals"
+      "tx.farmland",   "Cardinals"
+      "tx.mine",       "Single1"
+      "tx.oil_mine",   "Single1"
+      "tx.pollution",  "Single2"
+      "tx.fallout",    "Single2"
+      "tx.village",    "Single1"
+      "base.outpost",  "3Layer"
+      "base.fortress", "3Layer"
+      "base.airstrip", "3Layer"
+      "base.airbase",  "3Layer"
+      "base.ruins",    "3Layer"
+    }
