@@ -1,8 +1,9 @@
 [info]
 options = "+Freeciv-2.6-modpack"
-baseURL = "https://raw.githubusercontent.com/HansLemurson/RoundSquare/main"
+baseURL = "https://raw.githubusercontent.com/jwrober/RoundSquare/main"
 name = "RoundSquare"
 type = "Tileset"
+subtype = "overhead"
 version = "1.0"
 
 [files]
