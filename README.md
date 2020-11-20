@@ -17,14 +17,13 @@ See if you can spot the difference!
 
 # Install
 
-## Windows
+## Windows and Linux
 
-Download the files from Github and unpack them in the `/Freeciv-2.6-???/data` folder, to make the tileset part of that Freeciv install.
-Alternately, locate your `/UserName/AppData/Roaming/.freeciv/2.6` folder, and unzip the files into there to make them available to all Freeciv installs for that user.
+To install the tileset, open the modpack installer and enter this URL into box at the bottom of the window:
 
-## Linux
+https://raw.githubusercontent.com/HansLemurson/RoundSquare/main/RoundSquare.modpack
 
-Same as Windows but the target folder is `/usr/share/freeciv` (or `/usr/games/freeciv`) for a system-wide install, and `~/.freeciv/2.6` to install for one user only.
+and then click install modpack.
 
 # License
 
