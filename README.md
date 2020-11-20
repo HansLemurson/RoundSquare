@@ -1,5 +1,8 @@
 # RoundSquare
+This is a tileset for Freeciv designed to have clean un-cluttered graphics. 
+30x30 pixel size, Overhead view.
 
+## History
 Playing a Longturn game recently, I found out two important things:
 
 * Viewing a map this large requires a 30x30 tileset.
