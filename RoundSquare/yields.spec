@@ -60,4 +60,3 @@ tiles = { "row", "column", "tag"
  2,  9, "city.t_trade_9"
  } ;end tiles
  
- 
