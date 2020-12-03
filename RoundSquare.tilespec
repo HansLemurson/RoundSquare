@@ -95,6 +95,11 @@ files =
   "RoundSquare/citybar.spec", 
   "RoundSquare/yields.spec",
   ;  "RoundSquare/yields_f.spec",	;Optional Full-Food yield graphics.  Uncomment to activate. 
+  "RoundSquare/unit_info.spec",
+  "RoundSquare/upkeep.spec",  
+  "RoundSquare/paths.spec",
+  "RoundSquare/numbers.spec",
+  "RoundSquare/tile_extras.spec",
   "RoundSquare/tiles.spec",
   ;earth?
   "misc/small.spec",
@@ -109,15 +114,16 @@ files =
   "misc/cursors.spec",
   "RoundSquare/grid.spec",
   "RoundSquare/roads.spec",
+  "RoundSquare/fog.spec",
+  "RoundSquare/cities.spec",  
+  "RoundSquare/nuke.spec",
+  "RoundSquare/explosions.spec",
   "misc/buildings.spec",
   "misc/space.spec",
   "misc/techs.spec",
   "misc/treaty.spec",
   "misc/icons.spec",
-  "misc/editor.spec",
-  "RoundSquare/fog.spec",
-  "RoundSquare/cities.spec",
-  "RoundSquare/explosions.spec"
+  "misc/editor.spec"
 
 
 ; Include color definitions

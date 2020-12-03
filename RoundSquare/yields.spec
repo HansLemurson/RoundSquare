@@ -58,5 +58,6 @@ tiles = { "row", "column", "tag"
  2,  7, "city.t_trade_7"
  2,  8, "city.t_trade_8"
  2,  9, "city.t_trade_9"
- } ;end tiles
+
+} ;end tiles
  

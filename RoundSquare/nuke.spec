@@ -1,4 +1,3 @@
-
 [spec]
 
 ; Format and options of this spec file:
@@ -8,25 +7,20 @@ options = "+Freeciv-2.6-spec"
 
 artists = "
     Tatu Rissanen <tatu.rissanen@hut.fi>
+    Jeff Mallatt <jjm@codewell.com> (miscellaneous)
 "
 
 [file]
-gfx = "RoundSquare/tiles"
+gfx = "RoundSquare/nuke"
 
 [grid_main]
 
 x_top_left = 0
 y_top_left = 0
-dx = 30
-dy = 30
+dx = 90
+dy = 90
+pixel_border = 0
 
 tiles = { "row", "column", "tag"
-
-; Unit activity letters:  (note unit icons have just "u.")
-
-  4, 17, "unit.auto_attack",
-         "unit.auto_settler"
-  4, 18, "unit.connect"
-  4, 19, "unit.auto_explore"
-
+ 0, 0, "explode.nuke"
 }
