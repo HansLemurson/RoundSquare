@@ -1,7 +1,7 @@
 [spec]
 
 ; Format and options of this spec file:
-options = "+Freeciv-2.6-spec"
+options = "Freeciv-2.6-spec Freeciv-spec-Devel-2019-Jul-03"
 
 [info]
 ;	Shows the Tile Yields in terms of graphical "Pips" to show visually how productive a tile is.
