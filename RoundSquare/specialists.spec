@@ -2,7 +2,7 @@
 [spec]
 
 ; Format and options of this spec file:
-options = "+Freeciv-2.6-spec"
+options = "Freeciv-2.6-spec Freeciv-spec-Devel-2019-Jul-03"
 
 [info]
 
@@ -46,4 +46,8 @@ tiles = { "row", "column", "tag"
   1,  9, "specialist.farmer_1"
   1, 10, "specialist.merchant_0"
   1, 11, "specialist.merchant_1"
+
+  ; Freeciv21
+  1,  0, "specialist.entertainer_0"
+  1,  1, "specialist.entertainer_1"
 }
