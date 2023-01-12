@@ -17,7 +17,11 @@ See if you can spot the difference!
 
 # Install
 
-## Windows and Linux
+## Freeciv21
+
+RoundSquare can be installed from the [Modpack Installer](https://longturn.readthedocs.io/en/latest/Manuals/modpack-installer.html).
+
+## Freeciv 2.6
 
 To install the tileset, open the modpack installer and enter this URL into box at the bottom of the window:
 
