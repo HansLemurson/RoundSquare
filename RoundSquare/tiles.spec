@@ -420,7 +420,7 @@ tiles = { "row", "column", "tag"
  12, 13, "tx.darkness_n1e0s1w1"
  12, 14, "tx.darkness_n0e1s1w1"
  12, 15, "tx.darkness_n1e1s1w1"
- 14, 5, "tx.fog"
+ 14, 4, "tx.fog"
 
 
 ; Rivers (as special type), and whether north, south, east, west 
