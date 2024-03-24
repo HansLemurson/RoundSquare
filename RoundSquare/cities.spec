@@ -50,6 +50,7 @@ tiles = { "row", "column", "tag"
 ; used by all city styles
 
  0,  0, "city.disorder"
+ 0,  1, "city.happy"
 
 ;
 ; city tiles
